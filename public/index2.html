@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta
+      name="description"
+      content="Web site created using create-react-app"
+  />
+  <!--
+   Notice the use of %PUBLIC_URL% in the tags above.
+   It will be replaced with the URL of the `public` folder during the build.
+   Only files inside the `public` folder can be referenced from the HTML.
+   Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+   work correctly both with client-side routing and a non-root public URL.
+   Learn how to configure a non-root public URL by running `npm run build`.
+  -->
+  <title>last.fm</title>
+ </head>
+
+ <body class="body">
+  <div id="root" class="root">
+    <div class="root__top-bar">
+      <header class="top-bar__header">
+       <a class="player-bar-artwork js-artwork">
+        <img class="" src="/static/images/defaults/player_default_album.430223706b14.png" alt="" loading="lazy">
+       </a>
+   
+       <nav class="root__nav-bar">
+          <ul class="root__main-menu nav-bar-primary-text">
+         <li>
+            <a class="root__main-menu-items">
+            <svg height="24" width="24" viewBox="0 0 24 24">
+             <path fill="#fff"
+               d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z">
+             </path>
+            </svg>
+            </a>
+         </li>
+         <li>
+          <a class="root__main-menu-items">  
+            <a href="index1.html">          
+            <span>Home</span>
+            </a>
+          </a>
+        </li>
+           <li>
+              <a class="root__main-menu-items">            
+                <span>Live</span>
+              </a>
+            </li>
+            <li>
+              <a class="root__main-menu-items">           
+                <span>Music</span>
+              </a>
+            </li>
+            <li>
+              <a class="root__main-menu-items">            
+                <span>Charts</span>
+              </a>
+            </li>
+            <li>
+             <a class="root__main-menu-items">
+               <span>Events</span>
+             </a>
+           </li>
+           <li>
+            <a class="root__main-menu-items">          
+              <span>Futures</span>
+            </a>
+          </li>
+        </ul>
+        </nav>
+      <div class="root__logo">
+        <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="Layer_1" x="0px" y="0px" width="104px" height="40px" viewBox="0 0 708.767 179.332" enable-background="new 0 0 708.767 179.332" xml:space="preserve" sodipodi:version="0.32" inkscape:version="0.46" sodipodi:docname="lastfm_logo.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape"><metadata id="metadata20"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/></cc:Work></rdf:RDF></metadata><defs id="defs18"><inkscape:perspective sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 89.666 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="708.76703 : 89.666 : 1" inkscape:persp3d-origin="354.38351 : 59.777334 : 1" id="perspective22"/></defs><sodipodi:namedview inkscape:window-height="750" inkscape:window-width="1280" inkscape:pageshadow="2" inkscape:pageopacity="0.0" guidetolerance="10.0" gridtolerance="10.0" objecttolerance="10.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" showgrid="false" inkscape:zoom="0.76753006" inkscape:cx="325.30895" inkscape:cy="89.666" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:current-layer="Layer_1"/>
+        <title>last.fm</title>
+        <g id="g3" style="fill:#d51007;fill-opacity:1">
+         <path d="M158.431,165.498l-8.354-22.708c0,0-13.575,15.14-33.932,15.14c-18.013,0-30.802-15.662-30.802-40.721   c0-32.106,16.182-43.591,32.107-43.591c22.969,0,30.277,14.878,36.543,33.934l8.354,26.103   c8.351,25.318,24.013,45.678,69.17,45.678c32.37,0,54.295-9.918,54.295-36.02c0-21.143-12.009-32.107-34.458-37.328l-16.705-3.654   c-11.484-2.61-14.877-7.309-14.877-15.14c0-8.875,7.046-14.096,18.533-14.096c12.529,0,19.315,4.699,20.36,15.923l26.102-3.133   c-2.088-23.492-18.271-33.15-44.896-33.15c-23.491,0-46.462,8.875-46.462,37.327c0,17.75,8.614,28.975,30.277,34.195l17.752,4.175   c13.312,3.133,17.748,8.614,17.748,16.185c0,9.656-9.396,13.572-27.146,13.572c-26.364,0-37.325-13.834-43.591-32.89l-8.614-26.101   c-10.961-33.934-28.452-46.463-63.169-46.463c-38.37,0-58.731,24.275-58.731,65.517c0,39.677,20.361,61.08,56.906,61.08   C144.333,179.332,158.431,165.498,158.431,165.498L158.431,165.498z" id="path5" style="fill:#d51007;fill-opacity:1"/>
+         <path d="M46.726,153.229c-2.61,0.784-5.221,1.306-8.614,1.306c-6.265,0-10.703-2.87-10.703-10.442V1.827H0v148.792   c0,19.577,13.575,27.672,29.497,27.672c5.221,0,10.181-0.785,16.446-2.349L46.726,153.229L46.726,153.229z" id="path7" style="fill:#d51007;fill-opacity:1"/>
+         <path d="M376.911,149.053c-6.787,4.701-12.529,7.051-20.36,7.051c-9.92,0-15.401-5.221-15.401-18.012V77.006h36.023V55.603H341.41   V26.625l-27.669,3.394v25.583h-17.49v21.403h17.49v66.826c0,24.02,13.834,35.5,36.284,35.5c12.269,0,23.232-2.346,31.847-7.305   L376.911,149.053L376.911,149.053z" id="path9" style="fill:#d51007;fill-opacity:1"/>
+         <path d="M400.718,158.449c0,10.705,8.354,19.318,19.056,19.318c11.226,0,19.578-8.613,19.578-19.318   c0-10.963-8.353-19.313-19.578-19.313C409.072,139.136,400.718,147.486,400.718,158.449L400.718,158.449z" id="path11" style="fill:#d51007;fill-opacity:1"/>
+         <path d="M467.727,77.006v99.195h27.409V77.006h30.803V55.603h-30.803V44.638c0-16.444,7.049-21.665,18.534-21.665   c8.092,0,13.574,1.825,19.839,5.221l4.437-22.974C530.638,1.827,522.023,0,511.582,0c-22.973,0-43.855,10.963-43.855,43.593v12.01   h-17.489v21.403H467.727L467.727,77.006z" id="path13" style="fill:#d51007;fill-opacity:1"/>
+         <path d="M635.154,79.358c-3.133-19.578-15.923-26.629-32.63-26.629c-16.706,0-31.062,7.571-37.329,26.104l-3.393-23.23h-22.188   v120.598h27.409v-68.129c0-23.235,12.008-32.11,24.799-32.11c13.312,0,18.795,8.875,18.795,23.232v77.006h27.147v-68.39   c0-22.974,12.269-31.849,25.061-31.849c13.052,0,18.532,8.875,18.532,23.232v77.006h27.409V89.539   c0-25.843-15.14-36.81-35.24-36.81C656.561,52.729,641.419,60.3,635.154,79.358L635.154,79.358z" id="path15" style="fill:#d51007;fill-opacity:1"/>
+        </g>
+        </svg>
+      </div>
+      </header>
+    </div>
+    
+      <main class="main-view__sections">
+        <section>
+          <div class="root__main-view">
+            <div class="root__main-spacer">
+              <div class="Search">
+                <form class="search_form">
+                  <input type="text" placeholder="Поиск">
+                  <button type="submit"><div class="image_search">
+                    <svg height="24" width="24" viewBox="0 0 24 24">
+                      <path fill="#fff" d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z">
+                      </path>
+                     </svg>
+                  </div></button>
+                </form>
+              </div>
+          </div>
+        </section>
+        <section>
+          <h4 class="h4-text">Search results</h4>
+          <h5 class="h5-text">Tracks</h5>
+          <div class="main-view__recently-played-playlists1">
+            <div class="main-view__recently-played-item">
+              
+              <div class="recently-played-item__not-image-part1 playlist-item-primary-text">
+                  <div>
+                  <button class="play-button">
+                    <svg height="24" width="24" viewBox="0 0 24 24">
+                      <path
+                        d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+                      </path>
+                    </svg>
+                  </button>
+                </div>
+                <img loading="lazy" src="https://tntmusic.ru/media/content/article@2x/2021-11-15_10-59-34__1e4094e4-4603-11ec-8a2e-7dd717299a16.jpg" alt=""
+                class="recently-played__item-img">
+                <a>Главная причина</a>
+                <div class="author_text"><a>Люся Чеботина</a></div>
+                <div class="author_text"><a>3:26</a></div>
+              </div>
+            </div>
+            <div class="main-view__recently-played-item">
+              <div class="recently-played-item__not-image-part1 playlist-item-primary-text">
+               <div>
+                    <button class="play-button">
+                      <svg height="24" width="24" viewBox="0 0 24 24">
+                        <path
+                          d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+                        </path>
+                      </svg>
+                    </button>
+                  </div>
+                  <img loading="lazy" src="https://tntmusic.ru/media/content/article@2x/2021-11-15_10-59-34__1e4094e4-4603-11ec-8a2e-7dd717299a16.jpg" alt=""
+                class="recently-played__item-img">
+                  <a>Главная причина</a>
+                  <div class="author_text"><a>Люся Чеботина</a></div>
+                  <div class="author_text"><a>3:26</a></div>
+              </div>
+            </div>
+            <div class="main-view__recently-played-item">
+              <div class="recently-played-item__not-image-part1 playlist-item-primary-text">
+              <div>
+                    <button class="play-button">
+                      <svg height="24" width="24" viewBox="0 0 24 24">
+                        <path
+                          d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+                        </path>
+                      </svg>
+                    </button>
+                  </div>
+                  <img loading="lazy" src="https://tntmusic.ru/media/content/article@2x/2021-11-15_10-59-34__1e4094e4-4603-11ec-8a2e-7dd717299a16.jpg" alt=""
+                class="recently-played__item-img">
+                  <a>Главная причина</a>
+                  <div class="author_text"><a>Люся Чеботина</a></div>
+                  <div class="author_text"><a>3:26</a></div>
+              </div>
+            </div>
+            <div class="main-view__recently-played-item">
+              <div class="recently-played-item__not-image-part1 playlist-item-primary-text">
+              <div>
+                    <button class="play-button">
+                      <svg height="24" width="24" viewBox="0 0 24 24">
+                        <path
+                          d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+                        </path>
+                      </svg>
+                    </button>
+                  </div>
+                  <img loading="lazy" src="https://tntmusic.ru/media/content/article@2x/2021-11-15_10-59-34__1e4094e4-4603-11ec-8a2e-7dd717299a16.jpg" alt=""
+                class="recently-played__item-img">
+                  <a>Главная причина</a>
+                  <div class="author_text"><a>Люся Чеботина</a></div>
+                  <div class="author_text"><a>3:26</a></div>
+              </div>
+            </div>
+            <div class="main-view__recently-played-item">
+              <div class="recently-played-item__not-image-part1 playlist-item-primary-text">
+               <div>
+                <button class="play-button">
+                  <svg height="24" width="24" viewBox="0 0 24 24">
+                    <path
+                      d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <img loading="lazy" src="https://tntmusic.ru/media/content/article@2x/2021-11-15_10-59-34__1e4094e4-4603-11ec-8a2e-7dd717299a16.jpg" alt=""
+                class="recently-played__item-img">
+              <a>Главная причина</a>
+              <div class="author_text"><a>Люся Чеботина</a></div>
+              <div class="author_text"><a>3:26</a></div>
+            </div>
+          </div>
+            <div class="main-view__recently-played-item">
+              <div class="recently-played-item__not-image-part1 playlist-item-primary-text">
+              <div>
+                <button class="play-button">
+                  <svg height="24" width="24" viewBox="0 0 24 24">
+                    <path
+                      d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <img loading="lazy" src="https://tntmusic.ru/media/content/article@2x/2021-11-15_10-59-34__1e4094e4-4603-11ec-8a2e-7dd717299a16.jpg" alt=""
+                class="recently-played__item-img">
+              <a>Главная причина</a>
+              <div class="author_text"><a>Люся Чеботина</a></div>
+              <div class="author_text"><a>3:26</a></div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section>
+          <h5 class="h5-text ">Albums</h5>
+          <div class="main-view__my-shows1">
+            <div class="my-shows__card">
+              <div class="card__image-container">
+                <img loading="lazy" src="https://i.scdn.co/image/ab6761610000e5eb6404c342a8b0420a75e47991" alt=""
+                  class="card__image1">
+              </div>
+              <div class="card__title-container">
+                <div class="title-container__name-of-song1">
+                  Believe
+                </div>
+                <span class="title-container__name-of-author">Дима Билан</span>
+              </div>
+            </div>
+            <div class="my-shows__card">
+              <div class="card__image-container">
+                <img loading="lazy" src="https://i.scdn.co/image/ab6761610000e5eb6404c342a8b0420a75e47991" alt=""
+                  class="card__image1">
+              </div>
+              <div class="card__title-container">
+                <div class="title-container__name-of-song">
+                  Believe
+                </div>
+                <span class="title-container__name-of-author">Дима Билан</span>
+              </div>
+            </div>
+            <div class="my-shows__card">
+              <div class="card__image-container">
+                <img loading="lazy" src="https://i.scdn.co/image/ab6761610000e5eb6404c342a8b0420a75e47991" alt=""
+                  class="card__image1">
+              </div>
+              <div class="card__title-container">
+                <div class="title-container__name-of-song">
+                  Believe
+                </div>
+                <span class="title-container__name-of-author">Дима Билан</span>
+              </div>
+            </div>
+            <div class="my-shows__card">
+              <div class="card__image-container">
+                <img loading="lazy" src="https://i.scdn.co/image/ab6761610000e5eb6404c342a8b0420a75e47991" alt=""
+                  class="card__image1">
+              </div>
+              <div class="card__title-container">
+                <div class="title-container__name-of-song">
+                  Believe
+                </div>
+                <span class="title-container__name-of-author">Дима Билан</span>
+              </div>
+            </div>
+            <div class="my-shows__card">
+              <div class="card__image-container">
+                <img loading="lazy" src="https://i.scdn.co/image/ab6761610000e5eb6404c342a8b0420a75e47991" alt=""
+                  class="card__image1">
+              </div>
+              <div class="card__title-container">
+                <div class="title-container__name-of-song">
+                  Believe
+                </div>
+                <span class="title-container__name-of-author">Дима Билан</span>
+              </div>
+            </div>
+            <div class="my-shows__card">
+              <div class="card__image-container">
+                <img loading="lazy" src="https://i.scdn.co/image/ab6761610000e5eb6404c342a8b0420a75e47991" alt=""
+                  class="card__image1">
+              </div>
+              <div class="card__title-container">
+                <div class="title-container__name-of-song">
+                  Believe
+                </div>
+                <span class="title-container__name-of-author">Дима Билан</span>
+              </div>
+            </div>
+            <div class="my-shows__card">
+              <div class="card__image-container">
+                <img loading="lazy" src="https://i.scdn.co/image/ab6761610000e5eb6404c342a8b0420a75e47991" alt=""
+                  class="card__image1">
+              </div>
+              <div class="card__title-container">
+                <div class="title-container__name-of-song">
+                  Believe
+                </div>
+                <span class="title-container__name-of-author">Дима Билан</span>
+              </div>
+            </div>
+            <div class="my-shows__card">
+              <div class="card__image-container">
+                <img loading="lazy" src="https://i.scdn.co/image/ab6761610000e5eb6404c342a8b0420a75e47991" alt=""
+                  class="card__image1">
+              </div>
+              <div class="card__title-container">
+                <div class="title-container__name-of-song">
+                  Believe
+                </div>
+                <span class="title-container__name-of-author">Дима Билан</span>
+              </div>
+            </div>
+            <div class="my-shows__card">
+              <div class="card__image-container">
+                <img loading="lazy" src="https://i.scdn.co/image/ab6761610000e5eb6404c342a8b0420a75e47991" alt=""
+                  class="card__image1">
+              </div>
+              <div class="card__title-container">
+                <div class="title-container__name-of-song">
+                  Believe
+                </div>
+                <span class="title-container__name-of-author">Дима Билан</span>
+              </div>
+            </div>
+            <div class="my-shows__card">
+              <div class="card__image-container">
+                <img loading="lazy" src="https://i.scdn.co/image/ab6761610000e5eb6404c342a8b0420a75e47991" alt=""
+                  class="card__image1">
+              </div>
+              <div class="card__title-container">
+                <div class="title-container__name-of-song">
+                  Believe
+                </div>
+                <span class="title-container__name-of-author">Дима Билан</span>
+              </div>
+            </div>
+            <div class="my-shows__card">
+              <div class="card__image-container">
+                <img loading="lazy" src="https://i.scdn.co/image/ab6761610000e5eb6404c342a8b0420a75e47991" alt=""
+                  class="card__image1">
+              </div>
+              <div class="card__title-container">
+                <div class="title-container__name-of-song">
+                  Believe
+                </div>
+                <span class="title-container__name-of-author">Дима Билан</span>
+              </div>
+            </div>
+            <div class="my-shows__card">
+              <div class="card__image-container">
+                <img loading="lazy" src="https://i.scdn.co/image/ab6761610000e5eb6404c342a8b0420a75e47991" alt=""
+                  class="card__image1">
+              </div>
+              <div class="card__title-container">
+                <div class="title-container__name-of-song">
+                  Believe
+                </div>
+                <span class="title-container__name-of-author">Дима Билан</span>
+              </div>
+            </div>
+            </div>
+            <div class="text_more">More albums ></div>
+          </div>
+        </section>
+      </main>
+    </div>
+    
+        <link itemprop="url" href="https://www.last.fm">
+        <div class="footer">
+          <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-row">
+                    <div class="footer-top-col">
+                        
+                        <ul class="footer-links">
+                          <h2 class="footer-heading">Company</h2>
+                            <li><a href="/about">About Last.fm</a></li>
+                            <li><a href="/about/contact">Contact Us</a></li>
+                            <li><a href="/about/jobs">Jobs</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-top-col">
+                       <ul class="footer-links">
+                          <h2 class="footer-heading">Help</h2>
+                            <li><a href="/about/trackmymusic">Track My Music</a></li>
+                            <li><a href="https://support.last.fm/" target="_BLANK">Community Support</a></li>
+                            <li><a href="/help/guidelines">Community Guidelines</a></li>
+                            <li><a href="/help/faq" target="_BLANK">Help</a></li>
+                           </ul>
+                    </div>
+    
+                    <div class="footer-top-col">
+                        <ul class="footer-links">
+                          <h2 class="footer-heading">Goodies</h2>
+                            <li><a href="/about/trackmymusic">Download Scrobbler</a></li>
+                            <li><a href="/api">Developer API</a></li>
+                            <li><a href="/music/+free-music-downloads">Free Music Downloads</a></li>
+                            <li><a href="https://store.last.fm">Merchandise</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-top-col">
+                        <ul class="footer-links">
+                          <h2 class="footer-heading">Account</h2>
+                                <li><a href="/inbox">Inbox</a></li>
+                                <li><a href="/settings">Settings</a></li>
+                                <li><a href="/pro">Last.fm Pro</a></li>
+                                <li>
+                                    <form method="post" data-require="components/logout-form" action="/logout">
+                                        <input type="hidden" name="csrfmiddlewaretoken" value="iPJH49bGOi3TOU6Dlm9Nex6vwL6UTs0KtLBTuE1C3Vv46EI7XtMKo57k8MBOZWTR">
+                                        <button class="mimic-link">Logout</button>
+                                    </form>
+                                </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-top-col">
+                        <ul class="footer-links">
+                          <h2 class="footer-heading">Follow Us</h2>
+                            <li><a itemprop="sameAs" target="_blank" href="https://www.facebook.com/lastfm">Facebook</a></li>
+                            <li><a itemprop="sameAs" target="_blank" href="https://twitter.com/lastfm">Twitter</a></li>
+                            <li><a itemprop="sameAs" target="_blank" href="https://www.instagram.com/last_fm">Instagram</a></li>
+                            <li><a itemprop="sameAs" target="_blank" href="https://www.youtube.com/user/lastfm">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-9 inline-footer">
+                        <ul id="language-selector">
+                            <li class="footer-language footer-language--active">                                 
+                                        <strong>English</strong><span class="sr-only">current language</span>
+                                </li>
+                                <li class="footer-language">
+                                    <form class="footer-language-form" action="/i18n/setlang/" method="post">
+                                            <input type="hidden" name="language" value="de">
+                                            <button class="mimic-link" name="de" type="submit">Deutsch</button>
+                                        </form>
+                                </li>
+                                <li class="footer-language">
+                                    <form class="footer-language-form" action="/i18n/setlang/" method="post">
+                                            <input type="hidden" name="language" value="es">
+                                            <button class="mimic-link" name="es" type="submit">Español</button>
+                                        </form>
+                                </li>
+                                <li class="footer-language">
+                                    <form class="footer-language-form" action="/i18n/setlang/" method="post">
+                                            <input type="hidden" name="language" value="fr">
+                                            <button class="mimic-link" name="fr" type="submit">Français</button>
+                                        </form>
+                                </li>
+                                <li class="footer-language">
+                                    <form class="footer-language-form" action="/i18n/setlang/" method="post">
+                                            <input type="hidden" name="language" value="it">
+                                            <button class="mimic-link" name="it" type="submit">Italiano</button>
+                                        </form>
+                                </li>
+                                <li class="footer-language">
+                                        <form class="footer-language-form" action="/i18n/setlang/" method="post">
+                                            <input type="hidden" name="language" value="ja">
+                                            <button class="mimic-link" name="ja" type="submit">日本語</button>
+                                        </form>
+                                </li>
+                                <li class="footer-language">
+                                    <form class="footer-language-form" action="/i18n/setlang/" method="post">
+                                            <input type="hidden" name="language" value="pl">
+                                            <button class="mimic-link" name="pl" type="submit">Polski</button>
+                                        </form>
+                                </li>
+                                <li class="footer-language">
+                                    <form class="footer-language-form" action="/i18n/setlang/" method="post">
+                                            <input type="hidden" name="language" value="pt">
+                                            <button class="mimic-link" name="pt" type="submit">Português</button>
+                                        </form>
+                                </li>
+                                <li class="footer-language">
+                                        <form class="footer-language-form" action="/i18n/setlang/" method="post">
+                                            <input type="hidden" name="language" value="ru">
+                                            <button class="mimic-link" name="ru" type="submit">Русский</button>
+                                        </form>
+                                </li>
+                               <li class="footer-language">
+                                        <form class="footer-language-form" action="/i18n/setlang/" method="post">
+                                            <input type="hidden" name="language" value="sv">
+                                            <button class="mimic-link" name="sv" type="submit">Svenska</button>
+                                        </form>
+                                 </li>                             
+                                <li class="footer-language">                                 
+                                        <form class="footer-language-form" action="/i18n/setlang/" method="post">
+                                            <input type="hidden" name="language" value="tr">
+                                            <button class="mimic-link" name="tr" type="submit">Türkçe</button>
+                                        </form>
+                                </li>
+                                <li class="footer-language">
+                                    <form class="footer-language-form" action="/i18n/setlang/" method="post">
+                                            <input type="hidden" name="language" value="zh">
+                                            <button class="mimic-link" name="zh" type="submit">简体中文</button>
+                                        </form>
+                                </li>
+                        </ul>
+                        <div class="footer-legal">
+                            <ul>
+                                <li class="footer-legal-item"><a rel="nofollow" href="http://www.cbsinteractive.com/">CBS Interactive</a> © 2022 <span itemprop="name">Last.fm</span> Ltd. All rights reserved</li>
+                                <li class="footer-legal-item"><a href="/legal/terms">Terms of Use</a></li>
+                                <li class="footer-legal-item"><a href="/legal/privacy">Privacy Policy</a></li>
+                                <li class="footer-legal-item"><a href="/legal">Legal Policies</a></li>
+                                <li class="footer-legal-item"><a href="/legal/cookies">Cookies Policy</a></li>
+                                <li class="footer-legal-item"><a class="ot-sdk-show-settings">Cookie Information</a></li>
+                                <li class="footer-legal-item"><a target="_blank" href="https://careers.viacomcbs.com/">Jobs at ViacomCBS</a></li>
+                                <li class="footer-legal-item"><a rel="nofollow" href="http://www.last.fm">Last.fm Music</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+      </footer>
+   </div>
+ </body>
+</html>
